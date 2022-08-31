@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <meta name="description" content="">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/load.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/jquery.scrollbar.css">
+
+    <link rel="stylesheet" href="assets/css/remodal.css">
+    <link rel="stylesheet" href="assets/css/remodal-theme.css">
+
+    <link rel="stylesheet" href="assets/css/ie10-and-up.css">
+    <!-- /Styles -->
+
+    <!-- Toolbar Colors -->
+    <meta name="theme-color" content="#eab311"> <!-- Chrome, Firefox, Opera -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#eab311"> <!-- iOS Safari -->
+    <meta name="msapplication-navbutton-color" content="#eab311"> <!-- Windows Phone -->
+    <!-- /Toolbar Colors -->
+
+    <link rel="shortcut icon" href="assets/img/icons/favicon/favicon.ico.png">
+    <link rel="apple-touch-icon" href="assets/img/icons/favicon/apple_touch_icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/icons/favicon/apple_touch_icon_72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/icons/favicon/apple_touch_icon_114x114.png">
+
+</head>
+
+<body>
+
+    <!-- <video class="wrapper" poster="assets/img/background.png" playsinline autoplay muted loop>
+  <source src="link-to.webm" type="video/webm">
+  <source src="link-to.mp4" type="video/mp4">
+</video> -->
+
+    <div class="wrapper"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+
+        <div class="preloader__side preloader__side_left"></div>
+        <div class="preloader__side preloader__side_right"></div>
+
+        <div class="preloader__circles">
+            <div class="preloader__circle">
+                <div class="preloader__roller"></div>
+                <div class="preloader__roller"></div>
+            </div>
+
+            <div class="preloader__circle preloader__circle_2">
+                <div class="preloader__roller"></div>
+                <div class="preloader__roller"></div>
+            </div>
+
+            <div class="preloader__circle preloader__circle_3">
+                <div class="preloader__roller"></div>
+                <div class="preloader__roller"></div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /Preloader -->
+
+    <!-- Header -->
+    <header class="header">
+        
+        
+    </header>
+    <!-- /Header -->
+
+    <!-- Menu -->
+    <div class="side side_menu">
+        <div class="menu">
+
+            <div class="side__head dropdown">
+
+                <div class="costo-serv">
+                    <i class="gc gc-glass-5"></i>
+                    <div class="menu__info">
+                        <h4 class="title-mini" style="text-align: center;font-size: 30px;">Costo <br>$<span
+                                class="tot-receta-t">0.00</span></h4>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="side__wrapper scrollbar-inner">
+
+                <div class="menu__category" data-item-tags="ML">
+                    <p></p>
+                    <p class="txtexp">Para poder usar esta tabla de costeo necesitas conocer el precio de cada producto
+                        a utilizar.
+                        Coloca la cantidad que te dice la receta y la presentación en la que viene dicho producto
+                        expresado en Mililitros (ML).
+                    </p>
+
+                    <h4 class="title-mini dp0">Producto</h4>
+                    <h4 class="menu__title tit-h4 dp0"><input id="name0" type="text" name="product-name"
+                            class="prod-name"></h4>
+                    <div class="menu__item dropdown dp0">
+                        <div data-toggle="dropdown">
+                            <i class="gc gc-water"></i>
+                            <div class="menu__info">
+                                <h4 class="title-mini">Presentación</h4>
+                                <span><input type="number" name="p-cant0" data-id="0" id="p-cant0" min="0"
+                                        class="in-receta">ml</span>
+                                <span>$<input type="number" name="p-valor0" data-id="0" id="p-valor0" min="0"
+                                        class="in-receta"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu__item dropdown dp0">
+                        <div data-toggle="dropdown">
+                            <i class="gc gc-glass"></i>
+                            <div class="menu__info">
+                                <h4 class="title-mini">Receta</h4>
+                                <span><input type="number" data-id="0" name="r-cant0" id="r-cant0" min="0"
+                                        class="in-receta">ml</span>
+                                <span>$<input readonly="readonly" data-id="0" type="number" name="r-valor0"
+                                        id="r-valor0" class="in-receta tot-receta"></span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <h2 class="title add-prod">agregar producto</h2>
+                    <input type="hidden" id="counter-rec" value="1">
+                </div>
+
+
+
+            </div> <!-- /.side__wrapper -->
+
+        </div> <!-- /.menu -->
+    </div> <!-- /.side .side_menu -->
+    <!-- /Menu -->
+
+    </div> <!-- /.side .side_about -->
+    <!-- /About -->
+
+    
+    
+    <style type="text/css">
+        .btn-floating.fixed-bottom {
+            position: fixed;
+            top: auto;
+            bottom: 15px;
+            right: 15px;
+        }
+
+        .btn-floating:hover,
+        .btn-floating:focus {
+            opacity: 0.8;
+        }
+
+        a.btn-whatsapp:active,
+        a.btn-whatsapp:hover {
+            outline: 0;
+        }
+
+        a.btn-whatsapp:focus,
+        a.btn-whatsapp:hover {
+            color: #005580;
+            text-decoration: underline;
+        }
+
+        a.btn-whatsapp:focus,
+        a.btn-whatsapp:hover {
+            color: #434343;
+            text-decoration: none;
+            outline: none;
+            box-shadow: none;
+        }
+
+        .btn-floating {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 5px 8px;
+            color: rgba(67, 67, 67, 0.7);
+            fill: rgba(67, 67, 67, 0.7);
+            background-color: #FFFFFF;
+            border: 1px solid rgba(67, 67, 67, 0.05);
+            border-radius: 30px;
+            font-size: 18px;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.04), 0 3px 1px -2px rgba(0, 0, 0, 0.04), 0 1px 5px 0 rgba(0, 0, 0, 0.04);
+        }
+
+        .btn-whatsapp svg {
+            width: 30px;
+            height: 30px;
+            padding: 5px 2px;
+            fill: white;
+            vertical-align: middle;
+        }
+
+        .btn-whatsapp {
+            color: white;
+            background-color: #4dc247 !important;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+            border-radius: 50%;
+        }
+
+        user agent stylesheet svg:not(:root),
+        symbol,
+        image,
+        marker,
+        pattern,
+        foreignObject {
+            overflow: hidden;
+        }
+    </style>
+    <a href="https://api.whatsapp.com/send?phone=5493512857799" target="_blank"
+        class="btn-whatsapp btn-floating fixed-bottom visible-when-content-ready"
+        data-amplitude-event-name="store_whatsapp_icon_click"
+        data-amplitude-properties="{&quot;source&quot;:&quot;whatstapp_btn&quot;}">
+        <svg baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" viewBox="300 -476.1 1792 1792">
+            <path
+                d="M1413 497.9c8.7 0 41.2 14.7 97.5 44s86.2 47 89.5 53c1.3 3.3 2 8.3 2 15 0 22-5.7 47.3-17 76-10.7 26-34.3 47.8-71 65.5s-70.7 26.5-102 26.5c-38 0-101.3-20.7-190-62-65.3-30-122-69.3-170-118s-97.3-110.3-148-185c-48-71.3-71.7-136-71-194v-8c2-60.7 26.7-113.3 74-158 16-14.7 33.3-22 52-22 4 0 10 .5 18 1.5s14.3 1.5 19 1.5c12.7 0 21.5 2.2 26.5 6.5s10.2 13.5 15.5 27.5c5.3 13.3 16.3 42.7 33 88s25 70.3 25 75c0 14-11.5 33.2-34.5 57.5s-34.5 39.8-34.5 46.5c0 4.7 1.7 9.7 5 15 22.7 48.7 56.7 94.3 102 137 37.3 35.3 87.7 69 151 101a44 44 0 0 0 22 7c10 0 28-16.2 54-48.5s43.3-48.5 52-48.5zm-203 530c84.7 0 165.8-16.7 243.5-50s144.5-78 200.5-134 100.7-122.8 134-200.5 50-158.8 50-243.5-16.7-165.8-50-243.5-78-144.5-134-200.5-122.8-100.7-200.5-134-158.8-50-243.5-50-165.8 16.7-243.5 50-144.5 78-200.5 134S665.3 78.7 632 156.4s-50 158.8-50 243.5a611 611 0 0 0 120 368l-79 233 242-77a615 615 0 0 0 345 104zm0-1382c102 0 199.5 20 292.5 60s173.2 93.7 240.5 161 121 147.5 161 240.5 60 190.5 60 292.5-20 199.5-60 292.5-93.7 173.2-161 240.5-147.5 121-240.5 161-190.5 60-292.5 60a742 742 0 0 1-365-94l-417 134 136-405a736 736 0 0 1-108-389c0-102 20-199.5 60-292.5s93.7-173.2 161-240.5 147.5-121 240.5-161 190.5-60 292.5-60z">
+            </path>
+        </svg>
+    </a>
+
+    <!-- Javascript -->
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <!-- /jQuery -->
+
+    <!-- Preloader -->
+    <script src="assets/js/nprogress.min.js"></script>
+    <script>NProgress.configure({ showSpinner: false });</script>
+    <!-- /Preloader -->
+
+    <!-- Main Styles -->
+    <script src="assets/js/style.js"></script>
+    <!-- /Main Styles -->
+
+    <!-- Tagsort.js -->
+    <script src="assets/js/tagsort.min.js"></script>
+    <script>
+        $('.menu__tags').tagSort({
+            items: '.menu__category',
+            tagElement: 'div',
+            sortType: 'single',
+            fadeTime: 300
+        });
+    </script>
+    <!-- /Tagsort.js -->
+
+    <!-- Custom Scrollbar -->
+    <script src="assets/js/jquery.scrollbar.min.js"></script>
+    <script>
+        ['menu', 'about', 'date', 'contacts'].forEach(function (selector) {
+            $('.' + selector + ' .scrollbar-inner').scrollbar({
+                onScroll: function onScroll(y, x) {
+                    $('.' + selector + ' .scrollbar-inner').toggleClass('scroll-shadow', y.scroll >= 5);
+                }
+            });
+        });
+    </script>
+    <!-- /Custom Scrollbar -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+    <!-- Remodal.js -->
+    <script src="assets/js/remodal.min.js"></script>
+    <script src="assets/js/forminscripcion.js"></script>
+
+    <!-- /Remodal.js -->
+
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    <!-- Javascript -->
+
+</body>
+
+</html>
