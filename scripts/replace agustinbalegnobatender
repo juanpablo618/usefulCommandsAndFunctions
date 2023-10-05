@@ -1,0 +1,229 @@
+
+
+   <div class="side side_menu">
+        <div class="menu">
+
+          
+
+            <div class="side__wrapper scrollbar-inner">
+
+                <div class="menu__category" data-item-tags="ML">
+                 
+				<div class="produc-menu">
+                    <h2 class="title-mini dp0 producto-size">PRODUCTO</h2>
+                    <h2 class="menu__title tit-h4 dp0"><input id="name0" type="text" name="product-name"
+                            class="prod-name white-text"  placeholder="Nombre del producto"></h2>
+					 </div>		
+							
+				<div class="seccioncosteo">
+                    <div class="menu__item dropdown dp0">
+                        <div data-toggle="dropdown">
+                            <i class="gc gc-water"></i>
+                            <div class="menu__info">
+                                <h2 class="title-mini producto" >PRESENTACIÓN</h2>
+                               <input type="number" name="p-cant0" data-id="0" id="p-cant0" min="0"
+                                        class="in-receta in-r white-text"  placeholder="ml">
+                               <input type="number" name="p-valor0" data-id="0" id="p-valor0" min="0"
+                                        class="in-receta white-text"  placeholder="$">
+                            </div>
+                        </div>
+                    </div>
+					
+					<div class="separador"><br> </div>
+				
+                    <div class="menu__item dropdown dp0">
+                        <div data-toggle="dropdown">
+                            <i class="gc gc-glass"></i>
+                            <div class="menu__info">
+                                <h2 class="title-mini producto">RECETA</h2>
+                               <input type="number" data-id="0" name="r-cant0" id="r-cant0" min="0"
+                                        class="in-receta in-r white-text"  placeholder="ml">
+                                </span><input readonly="readonly" data-id="0" type="number" name="r-valor0"
+                                        id="r-valor0" class="in-receta tot-receta white-text"  placeholder="$">
+                            </div>
+                        </div>
+                    </div>
+					 </div>
+						 <h2 class="btn-agregar title add-prod "><img class="mas-btn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAAoUlEQVQ4jdWUPQ6DMAxGXxBXadf0KEwMHLBDJ27RmbHcBb4uiWoF2oSqQvRJkWUr+WLnx3B0nHUkXYDTRo3ROTcsopK8pEnbmST5qFMZzXPil1KFtQvBT/RhZKkLBa/BNrmJ35S4r+C7knteZQLcg21NrGPlCHbLsEl2j5ndcoL/eykp3a8Fsw86Yksegbl0oWEGHtFJ25fHfPRC1tvXYXkCjeZT//qDUkMAAAAASUVORK5CYII=">AGREGAR PRODUCTO</h2>
+                    <input type="hidden" id="counter-rec" value="1">
+					
+					
+					  <div class="side__head dropdown">
+
+                <div class="costo-serv">
+                    <i class="gc gc-glass-5"></i>
+                    <div class="menu__info ">
+                        <h4 class="title-mini producto-size costo " >Costo <br>
+						<span class="peso">$<span class="tot-receta-t ">0.00</span></span></h4>
+                    </div>
+                </div>
+
+            </div>
+                   
+                </div>
+
+
+
+            </div> <!-- /.side__wrapper -->
+
+        </div> <!-- /.menu -->
+    </div> <!-- /.side .side_menu -->
+	<!-- Javascript -->
+
+    <!-- jQuery -->
+    <script src="https://agustinbalegnobartender.com/wp-content/assets/js/jquery-1.12.4.min.js"></script>
+    <!-- /jQuery -->
+
+    <!-- Preloader -->
+    <script src="https://agustinbalegnobartender.com/wp-content/assets/js/nprogress.min.js"></script>
+    <script>NProgress.configure({ showSpinner: false });</script>
+    <!-- /Preloader -->
+
+    <!-- Main Styles -->
+    <script src="https://agustinbalegnobartender.com/wp-content/assets/js/style.js"></script>
+    <!-- /Main Styles -->
+
+    <!-- Tagsort.js -->
+    <script src="https://agustinbalegnobartender.com/wp-content/assets/js/tagsort.min.js"></script>
+    <script>
+        $('.menu__tags').tagSort({
+            items: '.menu__category',
+            tagElement: 'div',
+            sortType: 'single',
+            fadeTime: 300
+        });
+    </script>
+    <!-- /Tagsort.js -->
+
+    <!-- Custom Scrollbar -->
+    <script src="https://agustinbalegnobartender.com/wp-content/assets/js/jquery.scrollbar.min.js"></script>
+    <script>
+        ['menu', 'about', 'date', 'contacts'].forEach(function (selector) {
+            $('.' + selector + ' .scrollbar-inner').scrollbar({
+                onScroll: function onScroll(y, x) {
+                    $('.' + selector + ' .scrollbar-inner').toggleClass('scroll-shadow', y.scroll >= 5);
+                }
+            });
+        });
+    </script>
+    <!-- /Custom Scrollbar -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+    <!-- Remodal.js -->
+    <script src="https://agustinbalegnobartender.com/wp-content/assets/js/remodal.min.js"></script>
+    <script src="https://agustinbalegnobartender.com/wp-content/assets/js/forminscripcion.js"></script>
+	
+	<style>
+	.mas-btn{
+	PADDING-BOTTOM: 4PX;
+    PADDING-RIGHT: 5PX;
+	}
+	.add-prod{
+	margin-top:30px;
+	}
+	.btn-agregar{
+	width: 39%;
+    background: #CD4624;
+    padding: 6px 11px 6px 11px;
+    font-size: 18px;
+  
+    font-family: var(--brz-paragraphfontfamily) !important;
+  
+    line-height: var(--brz-paragraphtabletlineheight);
+    font-weight: var(--brz-paragraphtabletfontweight);
+    letter-spacing: var(--brz-paragraphtabletletterspacing);
+    color: #fff;
+	
+	}
+	.in-r{margin-right:10px;}
+	.producto-size{
+	margin-right:30px;
+	
+    font-size:27px!important;
+   
+	color: #D8D8D0;
+	font-family: var(--brz-heading4fontfamily) !important;
+    
+    line-height: var(--brz-heading4lineheight);
+    font-weight: var(--brz-heading4fontweight);
+    letter-spacing: var(--brz-heading4letterspacing);
+	}
+	.producto{
+	
+	
+	margin-right:30px;
+	
+    font-size: 18px !important;
+    font-family: var(--brz-heading4fontfamily) !important;
+    color: #D8D8D0;
+    line-height: var(--brz-heading4lineheight);
+    font-weight: var(--brz-heading4fontweight);
+    letter-spacing: var(--brz-heading4letterspacing);
+	}
+	.separador{
+	border-left: 1px solid #CFD2CF;
+	margin-right: 20px;
+	margin-left:20px;
+	}
+	#p-valor0{
+	
+	margin-bottom:20px;
+	}
+	.peso{
+	margin-left:20px;
+	margin-right:5px;
+	}
+	.menu__item {
+	display:flex  !important;
+	}
+	.costo{
+    margin-top:20px;
+	display:flex  !important;
+	    justify-content: space-between;
+	}
+	.seccioncosteo{
+	display:flex  !important;
+	justify-content: space-between;
+	}
+	.produc-menu{
+	display:flex  !important;
+	align-items: center !important;
+	}
+	.in-receta{
+	width:47% !important;
+	border-left: 1px solid #CFD2CF !important;
+	}
+	.costo-serv {
+	border-top:solid #CFD2CF 2px;
+	}
+	.menu{
+	display:block !important;
+	}
+    .white-text{color:white !important;}
+    @media only screen and (max-width: 600px) {
+  .produc-menu{
+	display:block  !important;
+	align-items: center !important;
+	}
+      .seccioncosteo{
+	display:block  !important;
+
+	}
+      .separador{
+        display:none !important;
+      }
+      .btn-agregar{
+	width: 100%;
+    background: #CD4624;
+    padding: 6px 11px 6px 11px;
+    font-size: 18px;
+  	text-align:center;
+    font-family: var(--brz-paragraphfontfamily) !important;
+  
+    line-height: var(--brz-paragraphtabletlineheight);
+    font-weight: var(--brz-paragraphtabletfontweight);
+    letter-spacing: var(--brz-paragraphtabletletterspacing);
+    color: #fff;
+	
+	}
+}
+	</style>

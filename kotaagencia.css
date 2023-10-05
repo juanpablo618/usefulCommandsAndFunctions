@@ -1,0 +1,65 @@
+#btn_conocenos
+{font-family: "YAEnl21zi4U 2", _fb_, auto !important;
+	font-size: 21.3333px;}
+
+
+#nf-field-1, #nf-field-2, #nf-field-3, #nf-field-5{
+	  background-color: white; 
+	color: black;
+	border: 1px solid #A890FE;
+	 border-radius: 20px;
+	padding: 10px; 
+
+}
+
+#nf-label-field-1, #nf-label-field-2, #nf-label-field-3, #nf-field-4, #nf-label-field-5, .nf-form-fields-required{
+font-family: "Telegraf", sans-serif;
+  font-weight: bold;	
+	color: black;
+}
+
+#nf-field-4{
+	border-radius: 20px;
+	color: white;
+}
+
+#caja-amarilla-abajo, #caja-gris-abajo{
+  margin-top: -52px;
+}
+
+#comunicacionAmarillo{
+	 background-color: #F3C000;
+}
+
+
+
+.label-above .field-wrap, .label-below .field-wrap {
+    flex-direction: column;
+    flex-flow: INHERIT !IMPORTANT;
+}
+
+.nf-form-content .label-above .nf-field-label, .nf-form-content .label-below .nf-field-label, .nf-form-content .label-hidden .nf-field-label {
+
+    WIDTH: 245PX !IMPORTANT;
+}
+
+
+.nf-form-fields-required{
+    font-weight: 400;
+    font-family: 'telegraf';
+	margin-bottom: 20px !important;
+}
+
+
+.nf-form-content textarea.ninja-forms-field {
+    height: 100px !important;
+}
+
+.nf-response-msg{
+	color:black ;
+}
+
+.nf-form-fields-required{
+	  font-size: 16px; /* Tamaño base del documento */
+
+}
