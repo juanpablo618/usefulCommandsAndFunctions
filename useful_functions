@@ -596,3 +596,24 @@ header("Location: https://".$wa_base.".whatsapp.com/send?phone=+5493517187930&te
 .$message." ".$results.$dobleSalto.$cadena2);
 exit();
 
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Función para poner un banner en la /tienda de woocommerce para wordpress
+se puede usar con plugin "code snippets" funcionó en ozonizer . 
+
+add_action( 'woocommerce_archive_description', 'agregar_banner_despues_descripcion_tienda', 20 );
+function agregar_banner_despues_descripcion_tienda() {
+        echo '<div class="mi-banner" style="text-align: center;"><img src="https://ozonizer.com.ar/web/wp-content/uploads/2023/11/Logo.png" alt="Banner" style="max-width: 100%; height: auto; display: inline-block;"></div>';
+
+}
+
+
+
+
+
+
+
+
+
+
