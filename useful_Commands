@@ -1621,7 +1621,58 @@ see all the todos in the app
 
 grep -r "TODO" . 
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+para tener un buen board de datadog, por api rest
+
+
+Apps
+
+Api’s consumidas
+Api’s que nos consumen
+
+Trafico saliente por dominio y app
+Dominios consumidos
+Top 10 de apps q nos consumen
+Top 10 de apps q consumimos
+Tiempo de respuesta según servicio
+
+Trafico
+Trafico total recibido por scope por app
+Trafico saliente por cliente
+Tiempos de respuesta “APLICACIÓN” p95, p99
+Trafico por scope
+Trafico recibido por scope por app
+Instance RPS x percentage accepted & rejected
+
+Status por servicio (scope write)
+Api call to aplicación 1. Dentro debe decir errores 200 - 400 - 499 - los q aparezcan
+Api call to aplicación 2
+Api call to aplicación 3
+
+Status for clients
+Call from aplicación 1 -> que scope llama y status
+Call from aplicación 2
+Etc
+
+Status
+Errores 4xx
+Request por HTTP status
+Errores 5xx
+
+Rate limit
+Request rejected x rate limit
+
+Infra
+Latency p95 - Scope Read
+Latency p95 - Scope Read 2
+Etc
+KVS container read quota
+Kvs uptime error rate
+Healthy vs Unhealthy replicas
+Avg RPM (Source: ELB/Envoy) -> por scope
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
